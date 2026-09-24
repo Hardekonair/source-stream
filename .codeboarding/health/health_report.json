@@ -1,0 +1,247 @@
+{
+  "repository_name": ".codeboarding-target",
+  "timestamp": "2026-09-24T05:22:28.275384+00:00",
+  "overall_score": 0.8904761904761904,
+  "check_summaries": [
+    {
+      "check_name": "function_size",
+      "description": "Checks that functions/methods do not exceed line count thresholds",
+      "languages": [
+        "javascript"
+      ],
+      "check_type": "standard",
+      "total_entities_checked": 36,
+      "findings_count": 5,
+      "warning_count": 5,
+      "score": 0.8611111111111112,
+      "finding_groups": [
+        {
+          "severity": "warning",
+          "threshold": 150,
+          "description": "Functions exceeding 150.0 lines",
+          "entities": [
+            {
+              "entity_name": "frontend.src.components.ChatInterface.ChatInterface",
+              "file_path": "frontend/src/components/ChatInterface.jsx",
+              "line_start": 77,
+              "line_end": 580,
+              "metric_value": 503
+            },
+            {
+              "entity_name": "frontend.src.components.VectorStore.VectorStore",
+              "file_path": "frontend/src/components/VectorStore.jsx",
+              "line_start": 5,
+              "line_end": 407,
+              "metric_value": 402
+            },
+            {
+              "entity_name": "frontend.src.components.DocumentLoader.DocumentLoader",
+              "file_path": "frontend/src/components/DocumentLoader.jsx",
+              "line_start": 9,
+              "line_end": 399,
+              "metric_value": 390
+            },
+            {
+              "entity_name": "frontend.src.App.App",
+              "file_path": "frontend/src/App.jsx",
+              "line_start": 10,
+              "line_end": 314,
+              "metric_value": 304
+            },
+            {
+              "entity_name": "frontend.src.components.TextSplitter.TextSplitter",
+              "file_path": "frontend/src/components/TextSplitter.jsx",
+              "line_start": 4,
+              "line_end": 234,
+              "metric_value": 230
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "circular_dependencies",
+      "description": "Detects circular dependencies between packages",
+      "languages": [
+        "javascript"
+      ],
+      "check_type": "circular_dependencies",
+      "cycles": [],
+      "packages_checked": 4,
+      "packages_in_cycles": 0
+    },
+    {
+      "check_name": "unused_code_diagnostics",
+      "description": "Detects unused imports, variables, functions, and dead code via LSP diagnostics",
+      "languages": [
+        "javascript"
+      ],
+      "check_type": "standard",
+      "total_entities_checked": 8,
+      "findings_count": 8,
+      "warning_count": 0,
+      "score": 0.6,
+      "finding_groups": [
+        {
+          "severity": "info",
+          "threshold": 0,
+          "description": "Variables declared but never used",
+          "entities": [
+            {
+              "entity_name": "[unused_variable] 'AlertTriangle' is declared but its value is never read.",
+              "file_path": "frontend/src/App.jsx",
+              "line_start": 2,
+              "line_end": 2,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'serverInfo' is declared but its value is never read.",
+              "file_path": "frontend/src/App.jsx",
+              "line_start": 27,
+              "line_end": 27,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'isLoadingStatus' is declared but its value is never read.",
+              "file_path": "frontend/src/App.jsx",
+              "line_start": 50,
+              "line_end": 50,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'AlertCircle' is declared but its value is never read.",
+              "file_path": "frontend/src/components/ChatInterface.jsx",
+              "line_start": 2,
+              "line_end": 2,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'isLast' is declared but its value is never read.",
+              "file_path": "frontend/src/components/ChatInterface.jsx",
+              "line_start": 5,
+              "line_end": 5,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'error' is declared but its value is never read.",
+              "file_path": "frontend/src/components/ChatInterface.jsx",
+              "line_start": 89,
+              "line_end": 89,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'animate' is declared but its value is never read.",
+              "file_path": "frontend/src/components/PipelineRail.jsx",
+              "line_start": 15,
+              "line_end": 15,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'Scissors' is declared but its value is never read.",
+              "file_path": "frontend/src/components/TextSplitter.jsx",
+              "line_start": 2,
+              "line_end": 2,
+              "metric_value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "function_size",
+      "description": "Checks that functions/methods do not exceed line count thresholds",
+      "languages": [
+        "python"
+      ],
+      "check_type": "standard",
+      "total_entities_checked": 40,
+      "findings_count": 1,
+      "warning_count": 1,
+      "score": 0.975,
+      "finding_groups": [
+        {
+          "severity": "warning",
+          "threshold": 150,
+          "description": "Functions exceeding 150.0 lines",
+          "entities": [
+            {
+              "entity_name": "backend.app.api.routes.retriever.query_rag",
+              "file_path": "backend/app/api/routes/retriever.py",
+              "line_start": 13,
+              "line_end": 250,
+              "metric_value": 237
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "circular_dependencies",
+      "description": "Detects circular dependencies between packages",
+      "languages": [
+        "python"
+      ],
+      "check_type": "circular_dependencies",
+      "cycles": [],
+      "packages_checked": 7,
+      "packages_in_cycles": 0
+    },
+    {
+      "check_name": "unused_code_diagnostics",
+      "description": "Detects unused imports, variables, functions, and dead code via LSP diagnostics",
+      "languages": [
+        "python"
+      ],
+      "check_type": "standard",
+      "total_entities_checked": 0,
+      "findings_count": 0,
+      "warning_count": 0,
+      "score": 1.0,
+      "finding_groups": []
+    }
+  ],
+  "file_summaries": [
+    {
+      "file_path": "frontend/src/components/ChatInterface.jsx",
+      "total_findings": 4,
+      "warning_findings": 1,
+      "composite_risk_score": 45.0
+    },
+    {
+      "file_path": "frontend/src/App.jsx",
+      "total_findings": 4,
+      "warning_findings": 1,
+      "composite_risk_score": 45.0
+    },
+    {
+      "file_path": "frontend/src/components/TextSplitter.jsx",
+      "total_findings": 2,
+      "warning_findings": 1,
+      "composite_risk_score": 25.0
+    },
+    {
+      "file_path": "frontend/src/components/VectorStore.jsx",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "frontend/src/components/DocumentLoader.jsx",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "backend/app/api/routes/retriever.py",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "frontend/src/components/PipelineRail.jsx",
+      "total_findings": 1,
+      "warning_findings": 0,
+      "composite_risk_score": 10.0
+    }
+  ]
+}
